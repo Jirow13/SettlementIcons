@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MNB2DIR>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</MNB2DIR>
+    <MOD_ID>SettlementIcons</MOD_ID>
+    <MOD_FOLDER>$(MNB2DIR)\Modules\$(MOD_ID)\</MOD_FOLDER>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{4390016D-7EEC-4102-8E82-354D5D7C851A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>$(MOD_ID)</RootNamespace>
+    <AssemblyName>$(MOD_ID)</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(MNB2DIR)\bin\Win64_Shipping_Client\Bannerlord.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+    <StartWorkingDirectory>$(MNB2DIR)\bin\Win64_Shipping_Client</StartWorkingDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.0.4\lib\net472\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <!-- Bannerlord Native Assemblies -->
+    <Reference Include="$(MNB2DIR)\bin\Win64_Shipping_Client\TaleWorlds*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(MNB2DIR)\Modules\Native\bin\Win64_Shipping_Client\TaleWorlds*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(MNB2DIR)\Modules\SandBox\bin\Win64_Shipping_Client\SandBox*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(MNB2DIR)\Modules\StoryMode\bin\Win64_Shipping_Client\StoryMode*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="$(MNB2DIR)\Modules\CustomBattle\bin\Win64_Shipping_Client\TaleWorlds*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MBBindingListInterceptor.cs" />
+    <Compile Include="Patches\PatchHero_OnIssueCreatedForHero.cs" />
+    <Compile Include="Patches\PatchHero_OnIssueDeactivatedForHero.cs" />
+    <Compile Include="Patches\PatchSettlementNameplatesVM.cs" />
+    <Compile Include="Patches\PatchSettlementNameplateWidget_UpdatePosition.cs" />
+    <Compile Include="Patches\PatchSettlement_AddHero.cs" />
+    <Compile Include="Patches\PatchSettlement_RemoveHero.cs" />
+    <Compile Include="Patches\PatchTournamentManager_AddTournament.cs" />
+    <Compile Include="Patches\PatchTournamentManager_OnPlayerJoinTournament.cs" />
+    <Compile Include="Patches\PatchTournamentManager_OnPlayerWatchTournament.cs" />
+    <Compile Include="Patches\PatchTournamentManager_RemoveTournament.cs" />
+    <Compile Include="Patches\PatchViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettlementIconSettings.cs" />
+    <Compile Include="SettlementIconsModule.cs" />
+    <Compile Include="SettlementIconState.cs" />
+    <Compile Include="SettlementIconStateRepo.cs" />
+    <Compile Include="ViewModels\NotificationVM.cs" />
+    <Compile Include="ViewModels\SettlementIconsNameplateVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <GUI Include="GUI\**/*.*" />
+    <ModuleData Include="ModuleData\**/*.*" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MOD_FOLDER)\bin\Win64_Shipping_Client\" />
+    <Copy SourceFiles="@(GUI)" DestinationFolder="$(MOD_FOLDER)\GUI\%(RecursiveDir)" />
+    <Copy SourceFiles="@(ModuleData)" DestinationFolder="$(MOD_FOLDER)\ModuleData\%(RecursiveDir)" />
+    <Copy SourceFiles="$(ProjectDir)\SubModule.xml" DestinationFolder="$(MOD_FOLDER)" />
+  </Target>
+</Project>

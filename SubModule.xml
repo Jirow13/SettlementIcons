@@ -1,0 +1,27 @@
+ <Module>
+     <Name value="Settlement Icons"/>
+     <Id value="SettlementIcons"/>
+     <Version value="v1.2.3"/>
+     <SingleplayerModule value="true"/>
+     <MultiplayerModule value="false"/>
+     <Official value="false" />
+     <DependedModules>
+         <DependedModule Id="Native"/>
+         <DependedModule Id="SandBoxCore"/>
+         <DependedModule Id="Sandbox"/>
+         <DependedModule Id="CustomBattle"/>
+         <DependedModule Id="StoryMode" />
+     </DependedModules>
+     <SubModules>
+         <SubModule>
+             <Name value="SettlementIcons"/>
+             <DLLName value="SettlementIcons.dll"/>
+             <SubModuleClassType value="SettlementIcons.SettlementIconsModule"/>
+             <Tags>
+                 <Tag key="DedicatedServerType" value="none" />
+                 <Tag key="IsNoRenderModeElement" value="false" />
+             </Tags>
+         </SubModule>
+     </SubModules>
+     <Xmls/>
+ </Module>
