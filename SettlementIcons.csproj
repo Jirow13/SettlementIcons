@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <StartAction>Program</StartAction>
@@ -105,8 +105,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <GUI Include="GUI\**/*.*" />
+    <GUI Include="GUI\Prefabs\Nameplate\SettlementNameplateItem.xml" />
+    <GUI Include="GUI\siSpriteData.xml" />
     <ModuleData Include="ModuleData\**/*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\SpriteParts\" />
+    <Folder Include="GUI\SpriteSheets\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">

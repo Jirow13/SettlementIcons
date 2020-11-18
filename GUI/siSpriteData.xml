@@ -2,7 +2,7 @@
 <SpriteData>
 	<SpriteCategories>
 		<SpriteCategory>
-			<Name>ui_custom_si</Name>
+			<Name>ui_custom</Name>
 			<SpriteSheetCount>1</SpriteSheetCount>
 			<SpriteSheetSize ID="1" Width="256" Height="256"/>
 		</SpriteCategory>
@@ -15,7 +15,7 @@
 			<Height>25</Height>
 			<SheetX>0</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_cow</Name>
@@ -24,7 +24,7 @@
 			<Height>25</Height>
 			<SheetX>37</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_flax</Name>
@@ -33,7 +33,7 @@
 			<Height>25</Height>
 			<SheetX>68</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_grain</Name>
@@ -42,7 +42,7 @@
 			<Height>26</Height>
 			<SheetX>94</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_grapes</Name>
@@ -51,7 +51,7 @@
 			<Height>25</Height>
 			<SheetX>124</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_hardwood</Name>
@@ -60,7 +60,7 @@
 			<Height>26</Height>
 			<SheetX>153</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_hide</Name>
@@ -69,7 +69,7 @@
 			<Height>25</Height>
 			<SheetX>185</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_horse</Name>
@@ -78,7 +78,7 @@
 			<Height>26</Height>
 			<SheetX>217</SheetX>
 			<SheetY>0</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_iron</Name>
@@ -87,7 +87,7 @@
 			<Height>26</Height>
 			<SheetX>0</SheetX>
 			<SheetY>27</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_olive</Name>
@@ -96,7 +96,7 @@
 			<Height>25</Height>
 			<SheetX>40</SheetX>
 			<SheetY>27</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_silk</Name>
@@ -105,7 +105,7 @@
 			<Height>26</Height>
 			<SheetX>73</SheetX>
 			<SheetY>27</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_silver</Name>
@@ -114,7 +114,7 @@
 			<Height>26</Height>
 			<SheetX>108</SheetX>
 			<SheetY>27</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_wool</Name>
@@ -123,7 +123,7 @@
 			<Height>25</Height>
 			<SheetX>143</SheetX>
 			<SheetY>27</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_fish</Name>
@@ -132,7 +132,7 @@
 			<Height>25</Height>
 			<SheetX>32</SheetX>
 			<SheetY>57</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_date</Name>
@@ -141,7 +141,7 @@
 			<Height>25</Height>
 			<SheetX>0</SheetX>
 			<SheetY>57</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_swine</Name>
@@ -150,7 +150,7 @@
 			<Height>25</Height>
 			<SheetX>214</SheetX>
 			<SheetY>28</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 		<SpritePart>
 			<Name>snp_salt</Name>
@@ -159,7 +159,7 @@
 			<Height>25</Height>
 			<SheetX>178</SheetX>
 			<SheetY>29</SheetY>
-			<CategoryName>ui_custom_si</CategoryName>
+			<CategoryName>ui_custom</CategoryName>
 		</SpritePart>
 	</SpriteParts>
 	<Sprites>

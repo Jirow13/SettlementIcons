@@ -44,11 +44,11 @@ namespace SettlementIcons
 					UIResourceManager.SpriteData.SpriteNames.Add(keyValuePair3.Key, keyValuePair3.Value);
 				}
 				*/
-				UIResourceManager.SpriteData.SpriteCategories["ui_custom_si"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
-				UIResourceManager.SpriteData.SpriteCategories["ui_custom_si"].SpriteSheets.Clear();
-				string folder = BasePath.Name + "/Modules/SettlementIcons/GUI/SpriteSheets/ui_custom_si/";
-				TaleWorlds.TwoDimension.Texture item = new TaleWorlds.TwoDimension.Texture(new EngineTexture(TaleWorlds.Engine.Texture.LoadTextureFromPath("ui_custom_si_1.png", folder)));
-				UIResourceManager.SpriteData.SpriteCategories["ui_custom_si"].SpriteSheets.Add(item);
+				UIResourceManager.SpriteData.SpriteCategories["ui_custom"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
+				UIResourceManager.SpriteData.SpriteCategories["ui_custom"].SpriteSheets.Clear();
+				string folder = BasePath.Name + "/Modules/SettlementIcons/GUI/SpriteSheets/ui_custom/";
+				TaleWorlds.TwoDimension.Texture item = new TaleWorlds.TwoDimension.Texture(new EngineTexture(TaleWorlds.Engine.Texture.LoadTextureFromPath("ui_custom_1.png", folder)));
+				UIResourceManager.SpriteData.SpriteCategories["ui_custom"].SpriteSheets.Add(item);
 			}
 			catch (Exception ex2)
 			{
