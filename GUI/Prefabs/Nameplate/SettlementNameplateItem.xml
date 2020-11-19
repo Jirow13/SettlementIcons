@@ -236,6 +236,136 @@
             <!--Map Event Visual-->
             <MapEventVisualWidget Id="MapEventVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!MapEvent.Visual.Width" SuggestedHeight="!MapEvent.Visual.Height" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-106" Brush="MapEvent.Visual.Brush" MapEventType="@MapEventVisualType" IsEnabled="false"/>
 
+			  <!-- SettlementIcons Begin -->
+			  <GridWidget Id="NotificationsGridWidget" DataSource="{Notifications}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" PositionXOffset="40" PositionYOffset="-15" DefaultCellWidth="20" DefaultCellHeight="20" ColumnCount="7" LayoutImp="GridLayout">
+				  <ItemTemplate>
+					  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Center">
+						  <Children>
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsPossibleNobleTroops">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPScoreboard\leader_crown_icon" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsQuestAvailable">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="Icons\icon_issue_available_square" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsClay">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_clay" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsFlax">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_flax" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsGrain">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_grain" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsGrape">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_grapes" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsHardwood">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_hardwood" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsHide">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_hide" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsHorse">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_horse" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsIron">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_iron" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsLeather">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_hide" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsOlive">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_olive" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsSilk">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_silk" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsWool">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_wool" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsSilver">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_silver" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsDate">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_date" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsSalt">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_salt" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsSwine">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_swine" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsFish">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_fish" />
+								  </Children>
+							  </Widget>
+
+							  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="true" IsVisible="@IsCattle">
+								  <Children>
+									  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="snp_cow" />
+								  </Children>
+							  </Widget>
+						  </Children>
+					  </Widget>
+				  </ItemTemplate>
+			  </GridWidget>
+			  <!-- SettlementIcons End -->
+			  
             <GridWidget Id="PartiesInSettlementGridWidget" DataSource="{SettlementParties\PartiesInSettlement}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="50" PositionXOffset="40" PositionYOffset="28" DefaultCellWidth="36" DefaultCellHeight="32" ColumnCount="5" LayoutImp="GridLayout">
               <ItemTemplate>
                 <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="26" SuggestedHeight="26" HorizontalAlignment="Center" Sprite="StdAssets\rectangle_card">

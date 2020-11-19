@@ -105,8 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <GUI Include="GUI\Prefabs\Nameplate\SettlementNameplateItem.xml" />
-    <GUI Include="GUI\siSpriteData.xml" />
+    <GUI Include="GUI\**/*.*" />
     <ModuleData Include="ModuleData\**/*.*" />
   </ItemGroup>
   <ItemGroup>
